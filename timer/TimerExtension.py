@@ -66,5 +66,5 @@ class SystemExitEventListener(EventListener):
 
     def on_event(self, event, extension):
         import sys
-        log.debug(sys.path)
+        log.error(sys.path)
         extension.quit()
